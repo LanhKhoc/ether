@@ -1,0 +1,14 @@
+.p-login {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+
+  &__form {
+    width: 500px;
+
+    > input {
+      margin: 15px 0;
+    }
+  }
+}

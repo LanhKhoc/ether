@@ -2,7 +2,7 @@ import React from "react";
 import { Switch } from 'react-router-dom';
 
 import { AuthRoute } from 'middlewares';
-import Header from 'components/header/Header';
+import Header from 'modules/components/header/Header';
 import { LoginContainer as Login } from 'modules/login';
 
 class Home extends React.Component {
@@ -12,11 +12,16 @@ class Home extends React.Component {
 
 	render() {
 		return (
-			<div>
-				<Header />
+			<div className="l-dashboard">
+				<div className="l-dashboard__header">
+					<Header />
+				</div>
+
+				<div className="l-dashboard__content">
 					<Switch>
 						<AuthRoute path="/login" middlewares={[]} component={Login} />
 					</Switch>
+				</div>
 			</div>
 		);
 	}
