@@ -1,0 +1,26 @@
+.c-header {
+  align-items: center;
+  background: palette(grey, 'xxx-dark');
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+
+  &__logo {
+    font-size: 30px;
+    text-decoration: none !important;
+
+    &:hover {
+      color: yellow;
+    }
+  }
+
+  &__navigate-item {
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none !important;
+
+    &:hover {
+      color: yellow;
+    }
+  }
+}
