@@ -1,9 +1,12 @@
-import _request from "./request";
+import _Request from "./RequestTask";
+import _RequestUserAPI from './user/UserAPI';
 
 export default {
-    _request
+	_Request,
+	_RequestUserAPI
 }
 
 export {
-    _request
+	_Request,
+	_RequestUserAPI
 }

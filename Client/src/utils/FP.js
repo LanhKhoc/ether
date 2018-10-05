@@ -21,6 +21,6 @@ const curry = (fn, N = fn.length) => {
 
 const map = curry((fn, target) => target.map(fn));
 
-// module.exports = {
-//   match
-// }
+export {
+	match
+}

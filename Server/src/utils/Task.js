@@ -1,4 +1,4 @@
-import * as R from 'ramda';
+const R = require('ramda');
 
 class Task {
   static rejected(x) {
@@ -30,4 +30,4 @@ class Task {
   }
 }
 
-export default Task;
+module.exports = Task;

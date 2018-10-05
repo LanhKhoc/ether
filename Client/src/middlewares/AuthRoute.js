@@ -41,7 +41,7 @@ export default class AuthRoute extends React.Component {
     const { component: C, ...rest } = this.props;
 
     return (
-      <div>
+      <React.Fragment>
         {
           this.state.isLoading
           ? null
@@ -49,7 +49,7 @@ export default class AuthRoute extends React.Component {
             ? <Redirect to={{ pathname: this.state.redirectUrl }} />
             : <Route {...rest} render={props => <C {...props} />} />
         }
-      </div>
+      </React.Fragment>
     );
   }
 }

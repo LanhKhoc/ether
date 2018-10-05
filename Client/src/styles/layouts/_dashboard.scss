@@ -1,9 +1,11 @@
 .l-dashboard {
   display: flex;
   flex-direction: column;
+  height: 1px;
   min-height: 100vh;
 
   &__content {
+    flex-basis: 1px;
     flex-grow: 1;
   }
 }
